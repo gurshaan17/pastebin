@@ -2,8 +2,10 @@ import express from "express";
 import { connectDB } from "./db";
 import { newPaste } from "./newPaste";
 import { getPaste } from "./getPaste";
+import cors from "cors"
 
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 
