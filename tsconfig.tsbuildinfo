@@ -1,1 +1,1 @@
-{"root":["./src/db.ts","./src/index.ts","./src/newpaste.ts"],"version":"5.6.3"}
+{"root":["./src/db.ts","./src/getpaste.ts","./src/index.ts","./src/newpaste.ts"],"version":"5.6.3"}

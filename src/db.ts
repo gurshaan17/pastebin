@@ -3,13 +3,13 @@ import mongoose, { Document, Schema } from "mongoose"
 
 interface Data extends Document{
     id: string,
-    shortUrl: string,
+    title: string,
     content: string
 }
 
 const DataSchema = new Schema({
     id: {type: String, required: true},
-    shortUrl: {type: String, required: true},
+    title: {type: String, required: true},
     content: {type: String, required: true}
 })
 
