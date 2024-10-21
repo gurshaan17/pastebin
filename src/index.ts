@@ -5,13 +5,15 @@ import { getPaste } from "./getPaste";
 import cors from "cors"
 
 const app = express()
-app.use(cors())
 app.use(express.json())
 
-
+app.use(cors())
 async function startServer() {
     try{
         await connectDB()
+        app.get('/',(req,res)=>{
+            res.status(200).json({ message: "Server working fine"})
+        })
         app.post('/new', newPaste)
         app.get('/get/:id', getPaste)
         app.listen(8080)
